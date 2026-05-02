@@ -1,20 +1,47 @@
-# 你的 dApp 名称
-Solana 生态去中心化应用
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>你的 dApp 名称 - 开发者官网</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        h1, h2 {
+            color: #000;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>你的 dApp 名称</h1>
+    <p>Solana 生态去中心化应用</p>
 
-## 📌 项目介绍
-[这里写你的 dApp 核心功能，比如：基于 Solana 的 NFT 交易工具/链上数据查询平台]
+    <h2>📌 项目介绍</h2>
+    <p>本项目是基于 Solana 区块链的去中心化应用，核心功能为 [这里写你的dApp核心功能，比如：链上NFT铸造与交易工具/DeFi流动性挖矿平台]。</p>
 
-## 🔗 使用说明
-1.  访问你的 dApp 地址：[你的 dApp 链接，比如 app.xxx.com]
-2.  连接你的 Solana 钱包
-3.  按照引导完成操作
+    <h2>🔗 使用说明</h2>
+    <ul>
+        <li>访问你的 dApp 地址：<a href="你的dApp链接">你的dApp链接</a></li>
+        <li>连接你的 Solana 钱包</li>
+        <li>按照引导完成操作</li>
+    </ul>
 
-## 👤 开发者信息
-- 开发者名称：[你的名字/项目团队名]
-- 联系邮箱：[你的邮箱地址]
+    <h2>👤 开发者信息</h2>
+    <p>开发者名称：[你的名字/项目团队名]<br>
+    联系邮箱：[你的邮箱地址]</p>
 
-## ⚠️ 免责声明
-本项目为去中心化应用，用户需自行评估链上操作风险，项目方不承担任何资产损失责任。
+    <h2>⚠️ 免责声明</h2>
+    <p>本项目为去中心化应用，用户需自行评估链上操作风险，项目方不承担任何资产损失责任。</p>
 
-## 📜 隐私政策
-[可以先写一句：本项目仅在用户授权时获取必要的钱包信息，不会收集用户隐私数据，所有数据均存储在链上。后续可补充完整隐私政策链接]
+    <h2>📜 隐私政策</h2>
+    <p>本项目仅在用户授权时获取必要的钱包信息，不会收集用户隐私数据，所有数据均存储在链上。</p>
+</body>
+</html>
