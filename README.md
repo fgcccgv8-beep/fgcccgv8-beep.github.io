@@ -35,26 +35,7 @@
 十二、其他
  
 协议修改会通知，您继续使用即视为同意
-VI. User Content Authorization
-When you share locations and other related content on the APP, you hereby grant us a worldwide, free, and irrevocable license to use, copy, modify and adapt the content you share. We may use such content for legitimate purposes including APP promotion and display.
-You shall guarantee that the content you share does not infringe upon the intellectual property rights of others, nor violate laws, regulations or public order and good morals. In the event of any disputes or infringement issues arising from your posted content, you shall bear full responsibilities independently.
-We reserve the right to review user-generated content. If any illegal or non-compliant content is found, we have the right to delete, block such content or restrict you from further posting.
-Posting comments requires access to your location information.
-VII. User Rights
-You have the right to access, correct and delete your personal information. If you have any questions or complaints regarding this Privacy Policy, you may contact us at any time, and we will respond and resolve your issues in a timely manner.
-VIII. Agreement Amendment
-We may amend this Agreement in accordance with changes in laws and regulations or business operational needs. The revised Agreement will be published within the APP. Your continued use of the APP shall be deemed as acceptance of the revised terms.
-IX. Governing Law and Dispute Resolution
-This Agreement shall be governed by the laws of the People’s Republic of China. In case of any dispute failing to be resolved through negotiation, either party may file a lawsuit with the competent people’s court.
-X. Third-Party Services
-During your use of the APP, you may access third-party services such as map services and sharing functions. Such third-party service providers may collect certain of your information. You shall carefully review the privacy policies of third parties when using these functions. We shall not be liable for the privacy policies and behaviors of third-party service providers.
-In case of information security incidents caused by third-party services, you may contact the relevant third party for resolution, and we will provide reasonable assistance within our capacity.
-XI. Account Cancellation
-If you wish to cancel your account, please follow the specific operating steps within the APP: [Detailed account cancellation procedures].
-After you submit the account cancellation application, we will process your request within [X] working days. Please back up all important data before cancellation, as data may not be recoverable after account termination.
-Upon successful account cancellation, you will no longer be able to log in to the APP with this account. All account-related information and data will be deleted or anonymized, except for data required to be retained by applicable laws and regulations.
-XII. Miscellaneous
-You will be notified of any agreement revisions. Your continued use of the APP following the update shall constitute your acceptance of the revised Agreement.
+
 
 用户协议:
  
@@ -110,42 +91,7 @@ You will be notified of any agreement revisions. Your continued use of the APP f
 十二、其他
  
 协议修改会通知，您继续使用即视为同意。 
-User Agreement
-I. General Provisions
-Welcome to use the Wild Foraging APP. Please read this Agreement carefully before using the application.
-II. Account Usage
-Minors under the age of 18 are prohibited from registering and using this APP. Any unauthorized registration by underage users shall be at their own sole responsibility.
-Users shall not lend, transfer or improperly access others’ accounts.
-III. Location Sharing
-Users authorize the APP to use their shared content and warrant that all published content is legal and compliant.
-The platform only provides an information sharing service. All risks arising from content sharing shall be borne by the user.
-IV. Activity Risks and Liabilities
-All outdoor activities including fishing, mountain climbing, wild foraging and other outdoor adventures shall be undertaken at the user’s own risk.
-Users shall take adequate safety precautions, wear professional protective equipment and participate in outdoor activities under the guidance of qualified personnel. Any adverse consequences caused by personal negligence shall be borne solely by the user.
-The wild vegetable and plant quiz functions within the platform are for entertainment reference only and do not constitute professional popular science guidance. The user shall be fully liable for any consequences such as accidental poisoning caused by reliance on relevant content.
-Users shall assume all risks of outdoor activities, including but not limited to natural disasters such as mudslides, drowning, falls, venomous snake bites, poisoning caused by pesticide-contaminated wild plants, accidental ingestion, and service fees charged at foraging or fishing locations. Users shall independently verify on-site conditions and bear all corresponding risks and legal liabilities.
-V. Disclaimer
-The platform endeavors to ensure the accuracy of displayed information, and shall not be held liable for any losses caused by inaccurate or erroneous content.
-VI. User Content Authorization
-When you share locations and other content on the APP, you hereby grant us a worldwide, free, and irrevocable license to use, copy, modify and adapt your shared content. We may use such content for legitimate purposes including APP promotion, display and publicity.
-You shall guarantee that your shared content does not infringe third-party intellectual property rights, nor violate applicable laws, regulations or public order and good morals. You shall bear full liability for any disputes or infringement claims arising from your posted content.
-We reserve the right to review all user-generated content. We may delete, block non-compliant content or restrict your posting privileges if violations are identified.
-Posting comments requires access to your location information.
-VII. User Rights
-You have the right to access, correct and delete your personal information. If you have any inquiries or complaints regarding our Privacy Policy, you may contact us at any time, and we will respond and resolve your matters in a timely manner.
-VIII. Agreement Amendment
-We may revise this Agreement in accordance with legal updates or business needs. The revised version will be published within the APP. Your continued use of the APP constitutes acceptance of the updated Agreement.
-IX. Governing Law and Dispute Resolution
-This Agreement shall be governed by the laws of the People’s Republic of China. If a dispute cannot be resolved through negotiation, either party may file a lawsuit with the competent court.
-X. Third-Party Services
-During your use of the APP, you may access third-party services such as map services and sharing functions. Third-party providers may collect user data. You shall carefully review their independent privacy policies. We assume no responsibility for the policies or conduct of third-party service providers.
-In the event of information security issues caused by third-party services, you may contact the relevant third party for resolution, and we will provide reasonable assistance within our capacity.
-XI. Account Cancellation
-If you wish to cancel your account, please follow the designated steps within the APP: [Please fill in the detailed account cancellation process].
-After submitting your cancellation application, we will process your request within [X] working days. Please back up all important data in advance, as account data may not be recoverable after cancellation.
-Upon successful account cancellation, you will no longer be able to log in with the same account. All account-related information and data will be deleted or anonymized, except for data required to be retained by mandatory laws and regulations.
-XII. Miscellaneous
-You will be notified of any agreement revisions. Your continued use of the APP after updates constitutes your acceptance of the revised terms.
+
 
 用户隐私政策:
  
@@ -190,8 +136,6 @@ You will be notified of any agreement revisions. Your continued use of the APP a
 若有疑问，可通过app我们联系。
  
 
-
-
 用户协议
  
 一、总则
@@ -220,49 +164,6 @@ You will be notified of any agreement revisions. Your continued use of the APP a
  
 平台尽力确保求职信息的信息准确，但不承担因信息错误产生的责任
 答题题库里面的图片仅供娱乐
-User Privacy Policy
-1. Introduction
-Welcome to use the Outdoor Survival APP. This Privacy Policy explains how we collect, use, store and protect your personal information. Please read it carefully.
-2. Information Collection
-Registration Information: When you log in via WeChat, we collect your WeChat login data for account management, and you are required to provide a username.
-Comment Information: We collect the content of comments you post within the APP.
-Location Sharing: When you use the location sharing feature, we collect the location information you share, including spots for fishing, wild vegetable picking, sightseeing, mountain climbing, exploration and other outdoor activities. We may also collect your device location information to provide more accurate services.
-In compliance with national regulations, user location information is required for posting comments.
-3. Information Use
-To optimize APP functions and improve services based on your usage and feedback.
-To conduct statistical analysis and research within the scope permitted by law.
-4. Information Protection
-We adopt technical and administrative measures to protect your personal information and prevent data leakage, loss and other risks.
-5. Third-Party Services
-If you use third-party services, such providers may collect your information. You shall carefully review the privacy policy of the relevant third party.
-6. Minor Protection
-This APP is prohibited for users under 18 years of age. Any violation shall be at the user’s own responsibility.
-7. Data Storage Period
-We store your personal information only for the period reasonably necessary to provide services.
-8. Updates and Notifications
-When this policy is updated, we will notify you in the APP. Please check updates in a timely manner.
-9. Contact Us
-If you have any questions, you may contact us through the APP.
-User Agreement
-1. General Provisions
-Welcome to use the Wild Outdoor APP. Please read this agreement carefully before use.
-2. Account Use
-Minors under the age of 18 are prohibited from registering and using this APP. Violators shall bear all liabilities on their own.
-Users shall not lend, transfer or steal any account.
-3. Location Sharing
-Users authorize the APP to use their shared content and warrant that all posted content is legal.
-The platform only provides an information sharing service, and users shall bear all related risks independently.
-4. Activity Risks and Liabilities
-All outdoor activities such as fishing, mountain climbing, wild foraging and other outdoor events are undertaken at the user’s own risk.
-Proper safety protection measures, professional equipment and guidance from qualified personnel are required for outdoor activities. Any consequences caused by personal negligence shall be borne solely by the user.
-The wild vegetable and plant quiz functions in the APP are for entertainment reference only and do not constitute professional science guidance. The user shall be fully responsible for any consequences such as accidental poisoning caused by referring to relevant content.
-Users shall bear all risks arising from outdoor activities, including but not limited to natural disasters such as mudslides, drowning, falls, venomous snake injuries, poisoning from pesticide-contaminated wild plants, accidental ingestion, and site fees at outdoor or fishing locations. Users shall check local site conditions in advance and assume all associated risks and legal responsibilities.
-All images in the official question bank are AI-generated, and all content is for entertainment purposes only.
-5. Disclaimer
-The platform strives to ensure the accuracy of published content, but shall not be liable for losses caused by incorrect information.
-All images in the quiz question bank are provided for entertainment only.
-
-
 
 免责声明：
 区块链操作存在风险，请用户谨慎评估后使用，项目方不承担任何资产损失责任。
