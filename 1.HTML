@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>户外打野官方网站</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", sans-serif;
+            scroll-behavior: smooth;
+        }
+        body {
+            background-color: #f8faf8;
+            color: #333;
+            line-height: 1.8;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        /* 导航栏 */
+        .nav {
+            background-color: #4CAF50;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 999;
+        }
+        .nav .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+        .nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+        .nav a:hover {
+            background: rgba(255,255,255,0.2);
+        }
+        h1 {
+            font-size: 42px;
+            text-align: center;
+            margin: 30px 0;
+            color: #4CAF50;
+        }
+        h2 {
+            font-size: 28px;
+            margin: 40px 0 20px;
+            color: #4CAF50;
+            border-left: 4px solid #4CAF50;
+            padding-left: 15px;
+        }
+        h3 {
+            font-size: 22px;
+            margin: 20px 0 15px;
+            color: #4CAF50;
+            text-align: center;
+        }
+        p {
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+        /* 下载按钮 */
+        .download-btn {
+            display: inline-block;
+            padding: 14px 36px;
+            background: #4CAF50;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 16px;
+            margin: 20px auto;
+            transition: 0.3s;
+        }
+        .download-btn:hover {
+            background-color: #45a049;
+        }
+        .btn-box {
+            text-align: center;
+        }
+        /* 功能预览 */
+        .func-preview {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+            margin: 40px 0;
+        }
+        .func-item {
+            width: 280px;
+            padding: 25px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+        /* 通用区块 */
+        .section {
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.04);
+        }
+        /* 警告提示框（AI识别用） */
+        .warning-tip {
+            background: #fff0f0;
+            border-left: 4px solid #e74c3c;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        /* 佣金提示框（兼职用） */
+        .commission-tip {
+            background: #e8f4fc;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        /* 双栏布局（兼职猎头） */
+        .two-col {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 20px;
+        }
+        .col-card {
+            flex: 1;
+            min-width: 280px;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        /* 三栏布局（联系我们） */
+        .three-col {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 20px;
+        }
+        .contact-card {
+            flex: 1;
+            min-width: 250px;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+        /* 路线图样式 */
+        .roadmap-item {
+            padding: 15px 20px;
+            margin: 15px 0;
+            background: #f1f8f1;
+            border-radius: 8px;
+            border-left: 4px solid #4CAF50;
+        }
+        .roadmap-item strong {
+            color: #4CAF50;
+            font-size: 17px;
+        }
+        /* 底部协议区块 */
+        .footer {
+            background: #fff;
+            color: #fff;
+            padding: 40px 0;
+            margin-top: 50px;
+        }
+        .footer-links {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .footer-links a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .policy-box {
+            background: #fff;
+            color: #333;
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .policy-box h3 {
+            color: #4CAF50;
+            margin-bottom: 15px;
+        }
+        .copyright-text {
+            text-align: center;
+            margin-top: 20px;
+        }
+        /* 响应式适配 */
+        @media (max-width:768px) {
+            .func-item, .col-card, .contact-card { width: 100%; }
+            .nav a { font-size: 14px; padding: 5px 8px; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- 导航栏 -->
+<div class="nav">
+    <div class="container">
+        <a href="#home">首页</a>
+        <a href="#intro">户外打野</a>
+        <a href="#hunting">打野钓鱼地址</a>
+        <a href="#ai">AI植物识别答题</a>
+        <a href="#farm">农场游戏</a>
+        <a href="#job">兼职猎头专区</a>
+        <a href="#roadmap">发展路线图</a>
+        <a href="#about">关于我们</a>
+        <a href="#contact">联系我们</a>
+    </div>
+</div>
+
+<!-- 首页 -->
+<div class="container" id="home">
+    <h1>探索自然的乐趣从未如此简单</h1>
+    <div class="btn-box">
+        <a href="#" class="download-btn">下载我们的应用程序，开始您的户外冒险之旅！</a>
+    </div>
+
+    <div class="func-preview">
+        <div class="func-item">
+            <h3>户外打野</h3>
+            <p>一站式满足户外打野、钓鱼、植物识别答题、兼职赚钱等需求，操作简单易上手</p>
+        </div>
+        <div class="func-item">
+            <h3>点位真实共享</h3>
+            <p>全国户外打野、钓鱼地址真实分享，可收藏、导航，户外出行不迷路</p>
+        </div>
+        <div class="func-item">
+            <h3>兼职佣金双收</h3>
+            <p>学生兼职、高端猎头职位全覆盖，推荐、分享均可赚钱，多劳多得</p>
+        </div>
+    </div>
+</div>
+
+<!-- App功能介绍 -->
+<div class="container section" id="intro">
+    <h2>App功能介绍</h2>
+    <p>户外打野官方App，专为户外爱好者、学生党、上班族打造，集户外娱乐、、兼职赚钱于一体，无需复杂操作，轻松解锁多重乐趣与收益，核心功能如下：</p>
+    <ul>
+        <li>户外打野&钓鱼地址分享：汇聚全国真实户外打野点位、水库、河流、野塘等钓点，支持用户发布、收藏、评论、导航直达，实时更新优质点位，解决户外出行找点位难题。、专业的户外打野导航和钓鱼点位指引，全方位满足用户户外探索、休闲垂钓的核心需求，让户外出行更省心、更安全。</li>
+        <li>AI植物图片答题：，，搭配趣味答题玩法，、答题内容仅供娱乐，不做专业食用、药用指导，兼顾趣味性与科普性。</li>
+        <li>兼职&猎头职位对接：专属学生兼职板块，涵盖校园兼职、假期兼职、线上兼职等，同时提供高端猎头职位，所有岗位均经过平台严格审核，杜绝虚假信息，保障求职安全。整合海量正规兼职招聘信息，提供便捷的在线报名、好友推荐及推广返佣服务，流程透明、操作简单，帮助用户利用碎片化时间灵活增收。</li>
+        <li>佣金赚取体系：、推荐优质户外点位被采纳根据用户提交的地址访问数量决定赚取金额的多少（目前这个活动没有开始，地址是谁先上传就归谁，1公里内不能上传其他地址（打卡，游玩这些地址不做限制），3年后其他用户才能更新这个地点的信息）、推荐求职好友成功入职，均可赚取相应平台佣金，佣金明细清晰，提现便捷，无门槛、无套路，轻松实现副业增收。</li>
+        <li>后期上线功能：线上下线结合的农场游戏，通过AI技术实现线上游戏农场和线下农场的双向交互，以模拟种植、养殖、任务养成等趣味玩法，提升用户粘性与平台活跃度，丰富休闲体验；线上模拟经营，线下联动实体农场，提供采摘、露营、亲子互动等体验，丰富户外娱乐场景，解锁更多赚钱玩法，同时建设线下共享农场，提供土地认养、托管种植、果蔬采摘、亲子体验等服务，打通线上流量与线下实体的连接，实现线上流量的线下变现。</li>
+    </ul>
+    <div class="warning-tip">
+        <p>温馨提示：AI植物答题、答题内容仅供娱乐，请勿自行采食野生植物；户外出行请遵守当地规定，注意人身安全。</p>
+    </div>
+</div>
+
+<!-- 打野钓鱼地址 -->
+<div class="container section" id="hunting">
+    <h2>户外打野&钓鱼地址分享</h2>
+    <p>平台汇聚全国各地区优质户外打野、钓鱼地址，所有点位均由用户真实发布、平台严格审核，确保点位真实、安全、可到达，覆盖山林、水库、河流、野塘等多种场景。</p>
+    <p>用户可免费查看所有点位详情，包括点位位置、周边环境、打野/钓鱼注意事项、最佳出行时间等，支持一键收藏、分享给好友，同时可通过导航直接前往，无需额外查找路线。</p>
+    <p>用户可发布自己发现的优质点位，发布成功并通过审核后，可获得平台佣金奖励，同时可接收其他用户的评论、咨询，交流户外经验，打造专属户外点位分享圈。</p>
+</div>
+
+<!-- AI植物识别&趣味答题 -->
+<div class="container section" id="ai">
+    <h2>AI植物图片识别&趣味答题</h2>
+    <p>App内置AI植物趣味答题，操作简单便捷，快速识别植物种类、生长习性、基础仅供娱乐，满足户外爱好者的好奇心与求知欲。</p>
+    <p>搭配趣味答题玩法，题目涵盖植物知识、户外常识等内容，答题过程轻松休闲，仅供娱乐消遣，不做专业知识参考，答题成功可获得少量佣金奖励，增加户外出行的趣味性。</p>
+    <div class="warning-tip">
+        <p>重要提示：AI植物识别结果仅供娱乐，不具备专业医疗、食用、药用指导价值，请勿自行采摘、食用野生植物，避免发生安全风险。</p>
+    </div>
+</div>
+
+<!-- 农场游戏 -->
+<div class="container section" id="farm">
+    <h2>农场游戏（后期上线）</h2>
+    <p>平台后期将推出线上下线结合的农场游戏，打造沉浸式户外休闲体验，兼顾娱乐性与互动性，让用户在户外游玩之余，解锁更多乐趣与收益。</p>
+    <p>线上玩法：用户可在App内模拟经营农场，种植农作物、养殖家禽，完成日常任务可获得游戏道具、佣金奖励；线下玩法：联动实体农场，用户可前往线下农场体验采摘、露营、亲子互动、农事体验等活动，实现线上娱乐与线下休闲的深度结合。</p>
+    <p>农场游戏将与平台佣金体系联动，用户可通过游戏任务、分享农场玩法等方式赚取额外佣金，进一步丰富“边玩边赚”的玩法，敬请期待！</p>
+</div>
+
+<!-- 兼职猎头专区 -->
+<div class="container section" id="job">
+    <h2>兼职猎头专区</h2>
+    <div class="two-col">
+        <div class="col-card">
+            <h3>学生兼职专区</h3>
+            <p>专为学生党打造，涵盖校园兼职、假期兼职、线上兼职、户外相关兼职等，岗位灵活，时间自由，兼顾学习与赚钱，所有岗位均经过平台严格审核，杜绝虚假兼职、诈骗陷阱。</p>
+            <p>常见学生兼职：户外点位采集员、App推广员、答题管理员、兼职客服等，无需丰富经验，简单培训即可上岗，佣金日结/周结，提现便捷。</p>
+        </div>
+        <div class="col-card">
+            <h3>猎头职位专区</h3>
+            <p>汇聚各行业高端猎头职位，涵盖户外相关、互联网、教育、金融等多个领域，为有职场提升需求的用户提供优质就业机会，平台全程对接猎头与求职者，提供简历优化、面试指导等辅助服务。</p>
+            <p>推荐好友成功入职猎头职位，可获得高额佣金奖励，佣金金额根据职位级别而定，多推荐多收益，轻松实现副业增收最大化。</p>
+        </div>
+    </div>
+    <div class="commission-tip">
+        <p>佣金规则：，推荐优质点位被采纳可获点位佣金（目前这个活动没有开始，地址是谁先上传就归谁，1公里内不能上传其他地址（打卡，游玩这些地址不做限制）），推荐求职好友成功入职可获推荐佣金，提现无门槛，到账及时，详细规则可在App内查看。</p>
+    </div>
+</div>
+
+<!-- 发展路线图 -->
+<div class="container section" id="roadmap">
+    <h2>平台发展路线图</h2>
+    <div class="roadmap-item">
+        <strong>1. APP开发 — APP上线</strong>
+        <p>完成App核心功能开发、测试与上线，搭建基础服务框架，实现户外点位分享、AI植物答题、兼职对接等核心功能落地。</p>
+    </div>
+    <div class="roadmap-item">
+        <strong>2. 上线应用商城</strong>
+        <p>开发并上线应用商城，。</p>
+    </div>
+    <div class="roadmap-item">
+        <strong>3. 拓展一个城市的地点</strong>
+        <p>试点拓展首个城市的户外打野、钓鱼点位资源，完善点位审核机制，积累运营经验。</p>
+    </div>
+    <div class="roadmap-item">
+        <strong>4. 拓展全部城市</strong>
+        <p>逐步拓展全国所有城市的点位资源，搭建全国性户外点位库，实现全国用户覆盖。</p>
+    </div>
+    <div class="roadmap-item">
+        <strong>5. 开发线上农场游戏</strong>
+        <p>完成线上农场游戏开发与上线，实现模拟种植、养殖、任务养成等玩法，提升用户留存与活跃度。</p>
+    </div>
+    <div class="roadmap-item">
+        <strong>6. 开发线下农场</strong>
+        <p>建设线下共享实体农场，开放土地认养、托管种植、果蔬采摘、亲子体验等服务，打通线上线下联动生态，实现流量变现。</p>
+    </div>
+</div>
+
+<!-- 关于我们 -->
+<div class="container section" id="about">
+    <h2>关于我们</h2>
+    <p>初心，源于荒野求生文化在国内逐渐兴起。越来越多户外爱好者向往山野探索、走进大自然，但绝大多数人对野生植物认知匮乏，分不清草木品类、不了解有毒与可食用植物，缺乏基础野外科普常识，户外出行暗藏安全隐患。
+与此同时，现代城市生活节奏太快，都市人群终日奔波忙碌、压力缠身，被困在快节奏的钢筋森林里，内心渴望远离喧嚣、奔赴山野，寻一份清静与放松，回归自然本真。
+除此之外，我们也看到当下学生找兼职、找实习屡屡受骗，不少黑心中介恶意套路、隐瞒信息、克扣薪资，学生辛苦干一天只能拿到微薄几十块，大部分收益被中介层层抽成瓜分，求职没有保障、维权无路可走。
+正是看见了这些现状，我们坚守初心打造本平台：<span style="color:red;">目前的软件里面的植物仅供娱乐，(等我们有钱了，请植物学家上传图片和科普)</span>
+    <p>户外打野官方，是专注于户外娱乐、、兼职就业的综合性服务平台，致力于为户外爱好者、学生党、上班族提供安全、便捷、有趣的一站式服务，打造“户外娱乐+兼职赚钱”的新型生态平台。</p>
+    <p>我们以“亲近自然、安全户外、娱乐科普、边玩边赚”为核心理念，坚守合规经营原则，严格审核所有点位信息、岗位信息，杜绝虚假内容，保障每一位用户的使用体验与合法权益。</p>
+    <p>不断优化平台功能，完善佣金体系，后续将持续迭代升级，推出线上线下结合的农场游戏等更多优质服务，让用户在享受户外乐趣的同时，轻松实现副业增收。</p>
+    <p>我们始终坚持用户至上，倾听用户需求，不断提升服务质量，努力成为户外爱好者信赖、学生党青睐的综合性户外服务平台，助力户外文化的传播与发展。</p>
+    <p>我们是个人创业，欢迎各位有兴趣的可以加入我们，欢迎云股东。</p>
+</div>
+
+<!-- 联系我们（按你截图修改的三栏卡片） -->
+<div class="container section" id="contact">
+    <h2>联系我们</h2>
+    <div class="three-col">
+        <div class="contact-card">
+            <h3>官方客服</h3>
+            <p>客服微信：无（备注：咨询/反馈）</p>
+            <p>客服电话：/p>
+            <p>服务时间：9:00-18:00（周一至周日）</p>
+        </div>
+        <div class="contact-card">
+            <h3>商务合作</h3>
+            <p>合作邮箱：fgcccgv8@gmail.com</p>
+            <p>合作范围：广告投放、点位入驻、渠道加盟、品牌联动，投资，我们是个人创业，欢迎各位有兴趣的可以加入我们，欢迎云股东</p>
+        </div>
+        <div class="contact-card">
+            <h3>反馈与举报</h3>
+            <p>反馈邮箱：fgcccgv8@gmail.com</p>
+            <p>举报内容：违规点位、虚假岗位、侵权内容、恶意行为</p>
+        </div>
+    </div>
+</div>
+
+<!-- 底部（用户协议/版权说明/隐私政策） -->
+<div class="footer">
+    <div class="container">
+        <div class="footer-links">
+            <a href="#user-agreement">用户协议</a>
+            <a href="#copyright">版权说明</a>
+            <a href="#privacy">隐私政策</a>
+        </div>
+
+        <div class="policy-box" id="user-agreement">
+            <h3>用户协议</h3>
+            <p>一、总则</p>
+            <p>欢迎使用户外打野 APP，使用前请阅读本协议，一旦使用平台服务，即视为接受本协议全部条款，自愿遵守平台所有规则。</p>
+            <p>二、账号使用</p>
+            <p>1. 禁止未满18周岁未成年人注册使用，违规注册责任自负。</p>
+            <p>2. 用户需保证自身身份信息真实有效，不得冒用、转借、盗用他人账号注册及使用平台服务。</p>
+            <p>三、地点分享</p>
+            <p>1. 分享内容授权APP合法使用，用户保证所发布内容真实、合法、合规。</p>
+            <p>2. 平台仅提供点位信息展示与分享渠道，所有户外出行及点位前往风险由用户自行承担。</p>
+            <p>3. 用户不得发布虚假点位、违规、违法、低俗暴力等不良信息。</p>
+            <p>四、活动风险与责任</p>
+            <p>1. 参与户外活动风险自担，包含钓鱼、爬山、野外探索等一切户外行为。</p>
+            <p>2. 进行户外活动需做好安全防护、配备专业装备，建议在专业人员陪同下前往，因个人疏忽、擅自行动造成的一切后果自行负责。</p>
+            <p>3. 平台AI植物识别、野外植物答题、题库图文内容仅为娱乐参考，不构成专业科普、食用、药用指导，切勿依据内容自行采食野生植物。</p>
+            <p>4. 户外活动需自行承担全部风险，包括但不限于：泥石流、山洪、溺水、失足摔伤、毒蛇虫咬伤、野生植物农药残留、误食中毒、私人点位收费纠纷等一切意外及法律责任。</p>
+            <p>5. 官方题库里面的图片是通过AI生成的或者拍照的图片（由于不是专业人士拍摄，），里面的内容仅供娱乐，答题题库图片仅作娱乐参考。</p>
+            <p>五、用户内容授权</p>
+            <p>1. 当您在APP分享地点、图文、评论等内容时，即授权平台在全球范围内免费、永久、不可撤销使用、复制、修改、改编、传播您发布的内容，可用于APP运营、推广、展示等合法用途。</p>
+            <p>2. 本人保证发布内容不侵犯他人知识产权、肖像权、著作权，不违反法律法规与公序良俗，若产生侵权及法律纠纷，由用户自行承担全部责任。</p>
+            <p>3. 平台拥有用户发布内容的审核、删除、屏蔽权限，发现违规内容可直接下架，并限制账号发布权限。</p>
+            <p>4. 用户发言、发布内容需要获取您的定位信息，遵守国家网络内容发布相关规定。</p>
+            <p>六、用户权利</p>
+            <p>您有权随时查看、更正、删除个人账号资料与个人信息；对平台协议、隐私政策有疑问或投诉建议，可通过官方渠道联系客服处理。</p>
+            <p>七、协议修改</p>
+            <p>平台可根据法律法规更新、业务运营需求修订本协议，修改后将在APP及官网显著位置公示，继续使用APP即视为默认同意新版协议条款。</p>
+            <p>八、法律适用与争议解决</p>
+            <p>本协议适用中华人民共和国法律；双方发生纠纷优先协商解决，协商不成可向平台属地有管辖权的人民法院提起诉讼。</p>
+            <p>九、第三方服务</p>
+            <p>1. APP部分功能会接入第三方服务（地图导航、登录分享、支付等），第三方服务会按照自身隐私政策收集相关信息，使用前请自行阅读第三方规则。</p>
+            <p>2. 因第三方服务造成信息泄露、功能异常等问题，由第三方承担责任，平台可尽力协助沟通处理。</p>
+            <p>十、账号注销</p>
+            <p>1. 若您决定注销账号，可在APP内按照对应步骤进行操作。</p>
+            <p>2. 账号注销申请提交后，平台会在约定工作日内处理；注销前请自行备份重要数据，注销后相关数据可能无法恢复。</p>
+            <p>3. 注销成功后，无法再使用该账号登录，除法律法规规定需保留的数据外，其余信息将做删除或匿名化处理。</p>
+            <p>十一、免责声明</p>
+            <p>平台尽力确保求职、点位信息准确，但不承担因信息误差、变更产生的一切损失责任。</p>
+        </div>
+
+        <div class="policy-box" id="copyright">
+            <h3>版权说明</h3>
+            <p>1. 本平台（户外打野官方）所有内容，包括但不限于文字、图片、视频、LOGO、AI算法、功能设计、点位信息、岗位信息、题库内容等，均受《中华人民共和国著作权法》保护，版权归本平台所有。</p>
+            <p>2. 未经本平台书面授权，任何单位或个人不得擅自复制、转载、传播、篡改、倒卖本平台内容，不得用于商业用途，否则将追究其侵权责任。</p>
+            <p>3. 用户发布的点位、经验、图片等内容，一经发布，即视为授权本平台在合理范围内使用（包括但不限于展示、推广、编辑等），用户保留著作权，平台有权对违规内容进行删除。</p>
+            <p>4. 若发现他人盗用本平台内容，欢迎向平台举报，平台将及时处理，并协助追究侵权方责任。</p>
+        </div>
+
+        <div class="policy-box" id="privacy">
+            <h3>隐私政策</h3>
+            <p>一、引言</p>
+            <p>欢迎使用户外打野APP及官方网站，本隐私政策旨在说明我们收集、使用、存储和保护您个人信息的相关事宜，请您仔细阅读。</p>
+            <p>二、信息收集</p>
+            <p>1. 注册信息：当您通过微信登录时，我们会收集您的微信登录信息用于账号管理，同时您需提供用户名。</p>
+            <p>2. 评论信息：您在APP内发表评论，我们会收集评论内容。</p>
+            <p>3. 地点分享功能：您使用地点分享功能时，我们会收集您分享的地点信息，包括钓鱼、挖野菜、看风景、爬山、探险等相关地点；同时可能收集设备位置信息，辅助提供精准服务。</p>
+            <p>4. 根据国家规定，评论及公开发布内容需要收集用户定位属地信息用于合规备案。</p>
+            <p>三、信息使用</p>
+            <p>1. 用于优化APP功能，根据使用情况和反馈改进服务。</p>
+            <p>2. 在法律允许范围内，进行统计分析和产品研究。</p>
+            <p>四、信息保护</p>
+            <p>我们采取技术和管理措施，确保您的信息安全，防止信息泄露、丢失、篡改。</p>
+            <p>五、第三方服务</p>
+            <p>若使用地图、分享等第三方服务，第三方可能收集相关信息，请自行查阅其隐私政策，平台不对第三方行为负责。</p>
+            <p>六、未成年人保护</p>
+            <p>本APP禁止未满18周岁未成年人注册及使用，违规使用产生一切责任自行承担。</p>
+            <p>七、存储期限</p>
+            <p>仅在服务必需及法律规定期限内保存用户信息，到期后做删除或匿名化处理。</p>
+            <p>八、用户权利</p>
+            <p>您有权访问、更正、删除个人信息；如有疑问或投诉，可随时联系我们处理。</p>
+            <p>九、协议更新</p>
+            <p>政策如有修改，将在APP内公示，继续使用即视为同意新版政策。</p>
+        </div>
+
+        <div class="copyright-text">
+            <p>© 2026 户外打野官方 版权所有 | </p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
